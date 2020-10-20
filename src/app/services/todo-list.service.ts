@@ -5,10 +5,10 @@ import { StorageService } from './storage.service';
 const storageKey = 'MyTodoList';
 
 const defaultTodoList = [
-  {description: "Tarea 1"},
-  {description: "Tarea 2"},
-  {description: "Tarea 3"},
-  {description: "Tarea 4"}
+  {description: "Create to-do list app"},
+  {description: "Make it pretty"},
+  {description: "Double-check for requirements"},
+  {description: "Deploy to GitHub pages"}
 ]
 
 @Injectable({
