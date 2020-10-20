@@ -1,27 +1,16 @@
-# Todolist
+# Todolist app
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.0-next.7.
+Simple to-do list Angular web app that allows you to create and delete items from a list.
 
-## Development server
+This is just the front-end side of the app, and it relies on your local storage to save the to-do list.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## What I used
 
-## Code scaffolding
+- [Angular 10](https://angular.io/)
+- [Bulma 0.9.1](https://bulma.io/)
+- [Font Awesome 5](https://fontawesome.com/)
+- [angular-cli-ghpages 0.6.2](https://www.npmjs.com/package/angular-cli-ghpages)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Try it!
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+A live version of the app is hosted in this repo's [GitHub Page](https://daiboruta.github.io/todolist/)
