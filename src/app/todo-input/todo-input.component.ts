@@ -9,7 +9,7 @@ import { NgForm, NgModel } from '@angular/forms';
 export class TodoInputComponent implements OnInit {
 
   description: string = '';
-  valid = true;
+  validClick = true;
 
   @Output() newTodo: EventEmitter<string> = new EventEmitter();
 
@@ -21,16 +21,21 @@ export class TodoInputComponent implements OnInit {
     
     if(inputForm.valid) {
 
-      console.log(inputForm.value.description);
       this.newTodo.emit(inputForm.value.description);
       inputForm.resetForm();
+      this.validClick = true;
     }
-    else {}
+    else {
 
+      this.validClick = false;
+    }
   }
 
   isValid(field: NgModel): boolean {
 
-    return field.invalid && (field.dirty || field.touched) && field.errors && field.errors.required;
+    const invalidField = field.invalid && (field.dirty || field.touched);
+    const invalidClick = !this.validClick && (field.pristine || field.untouched);
+
+    return !invalidField && !invalidClick;
   }
 }

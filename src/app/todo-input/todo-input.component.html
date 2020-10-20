@@ -5,8 +5,8 @@
                 [(ngModel)]="description" name="description" 
                 placeholder="Write your to-do here..."
                 required #desc="ngModel"
-                [ngClass]="{'is-danger': isValid(desc), 'is-primary': !isValid(desc)}">
-            <p [ngClass]="{'is-invisible': !isValid(desc)}" class="help is-danger">
+                [ngClass]="{'is-danger': !isValid(desc), 'is-primary': isValid(desc)}">
+            <p [ngClass]="{'is-invisible': isValid(desc)}" class="help is-danger">
                 Your to-do can't be empty!
             </p>
         </div>
