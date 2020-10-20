@@ -1,0 +1,15 @@
+@import "../../../node_modules/bulma/sass/utilities/initial-variables.sass";
+
+$bordercolor: $grey-lighter;
+
+.list-item {
+    &:not(:last-child) {
+        border-bottom: 1px solid $bordercolor;
+    }
+    
+    padding: 0.5em;
+
+    div {
+        vertical-align: middle;
+    }
+}

@@ -1,0 +1,21 @@
+<form #inputForm="ngForm" (ngSubmit)="submitTodo(inputForm)">
+    <div class="field is-grouped">
+        <div class="control is-expanded">
+            <input class="input" type="text" 
+                [(ngModel)]="description" name="description" 
+                placeholder="Write your to-do here..."
+                required #desc="ngModel"
+                [ngClass]="{'is-danger': isValid(desc), 'is-primary': !isValid(desc)}">
+            <p [ngClass]="{'is-invisible': !isValid(desc)}" class="help is-danger">
+                Your to-do can't be empty!
+            </p>
+        </div>
+        
+        <div class="control">
+            <button class="button is-primary" type="submit">Add</button>
+        </div>
+    </div>
+    
+</form>
+
+
